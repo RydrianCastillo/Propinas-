@@ -12,6 +12,7 @@ export default function MenuItem({item, dispatch}: MenuItemProps) {  // Desestru
   return (
     <button onClick={() => dispatch({type: 'add-item', payload: {item: item}}) }  className="border-2 border-teal-400 hover:bg-teal-200 w-full mb-2 p-3 ml-2 flex justify-between" >
 
+        <p>hola</p>
         <p>{item.name}</p>
         <p className=" font-black" >${item.price}</p>
 
